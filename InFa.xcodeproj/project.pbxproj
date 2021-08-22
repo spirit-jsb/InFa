@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		5042AF4826D1383F002B0C8A /* InFa.h in Headers */ = {isa = PBXBuildFile; fileRef = 5042AF4626D1383F002B0C8A /* InFa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50461A9B26D14E6E00853FBF /* VMStarLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50461A9A26D14E6E00853FBF /* VMStarLayer.swift */; };
+		50461A9D26D1697700853FBF /* InFa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50461A9C26D1697700853FBF /* InFa.swift */; };
+		50461A9F26D289DD00853FBF /* VMStarDefaultConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50461A9E26D289DD00853FBF /* VMStarDefaultConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5042AF4626D1383F002B0C8A /* InFa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InFa.h; sourceTree = "<group>"; };
 		5042AF4726D1383F002B0C8A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50461A6B26D137DC00853FBF /* InFa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InFa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50461A9A26D14E6E00853FBF /* VMStarLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMStarLayer.swift; sourceTree = "<group>"; };
+		50461A9C26D1697700853FBF /* InFa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InFa.swift; sourceTree = "<group>"; };
+		50461A9E26D289DD00853FBF /* VMStarDefaultConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMStarDefaultConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +36,7 @@
 		5042AF4526D1383F002B0C8A /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				50461A9926D14E5600853FBF /* Core */,
 				5042AF4626D1383F002B0C8A /* InFa.h */,
 				5042AF4726D1383F002B0C8A /* Info.plist */,
 			);
@@ -50,6 +57,16 @@
 				50461A6B26D137DC00853FBF /* InFa.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		50461A9926D14E5600853FBF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				50461A9C26D1697700853FBF /* InFa.swift */,
+				50461A9E26D289DD00853FBF /* VMStarDefaultConfiguration.swift */,
+				50461A9A26D14E6E00853FBF /* VMStarLayer.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +111,7 @@
 				TargetAttributes = {
 					50461A6A26D137DC00853FBF = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -130,6 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50461A9F26D289DD00853FBF /* VMStarDefaultConfiguration.swift in Sources */,
+				50461A9B26D14E6E00853FBF /* VMStarLayer.swift in Sources */,
+				50461A9D26D1697700853FBF /* InFa.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +283,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -279,6 +301,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,6 +311,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
