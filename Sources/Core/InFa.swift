@@ -36,7 +36,13 @@ public protocol VMStarConfiguration {
   
   var filledStarImage: UIImage? { set get }
   
+  var minTouchRating: Float { set get }
   
+  var blockingTouches: Bool { set get }
+  
+  var updateByTouch: Bool { set get }
+    
+  var disabledPanGestures: Bool { set get }
 }
 
 public enum VMStarFillMode {

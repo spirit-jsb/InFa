@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		503BB5C226D5322000B71909 /* VMStarConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503BB5C126D5322000B71909 /* VMStarConfiguration.swift */; };
 		5042AF4826D1383F002B0C8A /* InFa.h in Headers */ = {isa = PBXBuildFile; fileRef = 5042AF4626D1383F002B0C8A /* InFa.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50461A9B26D14E6E00853FBF /* VMStarLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50461A9A26D14E6E00853FBF /* VMStarLayer.swift */; };
 		50461A9D26D1697700853FBF /* InFa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50461A9C26D1697700853FBF /* InFa.swift */; };
-		50461A9F26D289DD00853FBF /* VMStarDefaultConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50461A9E26D289DD00853FBF /* VMStarDefaultConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		503BB5C126D5322000B71909 /* VMStarConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMStarConfiguration.swift; sourceTree = "<group>"; };
 		5042AF4626D1383F002B0C8A /* InFa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InFa.h; sourceTree = "<group>"; };
 		5042AF4726D1383F002B0C8A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50461A6B26D137DC00853FBF /* InFa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InFa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50461A9A26D14E6E00853FBF /* VMStarLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMStarLayer.swift; sourceTree = "<group>"; };
 		50461A9C26D1697700853FBF /* InFa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InFa.swift; sourceTree = "<group>"; };
-		50461A9E26D289DD00853FBF /* VMStarDefaultConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMStarDefaultConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				50461A9C26D1697700853FBF /* InFa.swift */,
-				50461A9E26D289DD00853FBF /* VMStarDefaultConfiguration.swift */,
+				503BB5C126D5322000B71909 /* VMStarConfiguration.swift */,
 				50461A9A26D14E6E00853FBF /* VMStarLayer.swift */,
 			);
 			path = Core;
@@ -148,7 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50461A9F26D289DD00853FBF /* VMStarDefaultConfiguration.swift in Sources */,
+				503BB5C226D5322000B71909 /* VMStarConfiguration.swift in Sources */,
 				50461A9B26D14E6E00853FBF /* VMStarLayer.swift in Sources */,
 				50461A9D26D1697700853FBF /* InFa.swift in Sources */,
 			);
