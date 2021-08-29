@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     s.default_subspecs = 'Core'
     
     s.subspec 'Core' do |sp|
-        sp.source_files = ['Sources/Core/**/*.swift', 'Sources/InFa.h']
+        sp.source_files = ['Sources/**/*.swift', 'Sources/InFa.h']
     end
 
 end
