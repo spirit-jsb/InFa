@@ -33,9 +33,9 @@ public struct VMStarConfiguration {
   
   public var filledStarImage: UIImage? = nil
   
-  public var emptyStarImageTintColor: UIColor? = UIColor(red: 0.949, green: 0.275, blue: 0.227, alpha: 1.0)
+  public var emptyStarImageTintColor: UIColor? = nil
   
-  public var filledStarImageTintColor: UIColor? = UIColor(red: 0.949, green: 0.275, blue: 0.227, alpha: 1.0)
+  public var filledStarImageTintColor: UIColor? = nil
   
   public var minTouchRating: Float = 1.0
   
