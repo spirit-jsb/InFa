@@ -66,7 +66,7 @@ struct VMStarLayersHelper {
     let filledStarLayer = self.createStarLayer(configuration: configuration, isFilled: true)
     
     let parentLayer = CALayer()
-    parentLayer.bounds = CGRect(x: 0.0, y: 0.0, width: filledStarLayer.bounds.width, height: filledStarLayer.bounds.height)
+    parentLayer.bounds = CGRect(origin: CGPoint(), size: filledStarLayer.bounds.size)
     parentLayer.anchorPoint = CGPoint()
     parentLayer.contentsScale = UIScreen.main.scale
     
