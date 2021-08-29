@@ -11,6 +11,12 @@
 		5042AF4826D1383F002B0C8A /* InFa.h in Headers */ = {isa = PBXBuildFile; fileRef = 5042AF4626D1383F002B0C8A /* InFa.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50461A9B26D14E6E00853FBF /* VMStarLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50461A9A26D14E6E00853FBF /* VMStarLayer.swift */; };
 		50461A9D26D1697700853FBF /* InFa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50461A9C26D1697700853FBF /* InFa.swift */; };
+		50BE09CF26DB22BE00550142 /* VMStarRatingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BE09CE26DB22BE00550142 /* VMStarRatingHelper.swift */; };
+		50BE09D226DB2D0500550142 /* VMStarSizeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BE09D126DB2D0500550142 /* VMStarSizeHelper.swift */; };
+		50BE09D526DB310A00550142 /* VMStarLayersHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BE09D426DB310A00550142 /* VMStarLayersHelper.swift */; };
+		50BE09D826DB318300550142 /* UIView+InFa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BE09D726DB318300550142 /* UIView+InFa.swift */; };
+		50BE09DA26DB460200550142 /* VMStarTouchHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BE09D926DB460200550142 /* VMStarTouchHelper.swift */; };
+		50BE09DC26DB6B2C00550142 /* VMStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BE09DB26DB6B2C00550142 /* VMStarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		50461A6B26D137DC00853FBF /* InFa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InFa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50461A9A26D14E6E00853FBF /* VMStarLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMStarLayer.swift; sourceTree = "<group>"; };
 		50461A9C26D1697700853FBF /* InFa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InFa.swift; sourceTree = "<group>"; };
+		50BE09CE26DB22BE00550142 /* VMStarRatingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMStarRatingHelper.swift; sourceTree = "<group>"; };
+		50BE09D126DB2D0500550142 /* VMStarSizeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMStarSizeHelper.swift; sourceTree = "<group>"; };
+		50BE09D426DB310A00550142 /* VMStarLayersHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMStarLayersHelper.swift; sourceTree = "<group>"; };
+		50BE09D726DB318300550142 /* UIView+InFa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+InFa.swift"; sourceTree = "<group>"; };
+		50BE09D926DB460200550142 /* VMStarTouchHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMStarTouchHelper.swift; sourceTree = "<group>"; };
+		50BE09DB26DB6B2C00550142 /* VMStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMStarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,8 @@
 			isa = PBXGroup;
 			children = (
 				50461A9926D14E5600853FBF /* Core */,
+				50BE09D626DB314A00550142 /* Extensions */,
+				50BE09D326DB30CB00550142 /* Helper */,
 				5042AF4626D1383F002B0C8A /* InFa.h */,
 				5042AF4726D1383F002B0C8A /* Info.plist */,
 			);
@@ -65,8 +79,28 @@
 				50461A9C26D1697700853FBF /* InFa.swift */,
 				503BB5C126D5322000B71909 /* VMStarConfiguration.swift */,
 				50461A9A26D14E6E00853FBF /* VMStarLayer.swift */,
+				50BE09DB26DB6B2C00550142 /* VMStarView.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		50BE09D326DB30CB00550142 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				50BE09D426DB310A00550142 /* VMStarLayersHelper.swift */,
+				50BE09CE26DB22BE00550142 /* VMStarRatingHelper.swift */,
+				50BE09D126DB2D0500550142 /* VMStarSizeHelper.swift */,
+				50BE09D926DB460200550142 /* VMStarTouchHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		50BE09D626DB314A00550142 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				50BE09D726DB318300550142 /* UIView+InFa.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,9 +182,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50BE09D826DB318300550142 /* UIView+InFa.swift in Sources */,
+				50BE09D526DB310A00550142 /* VMStarLayersHelper.swift in Sources */,
+				50BE09DA26DB460200550142 /* VMStarTouchHelper.swift in Sources */,
+				50BE09DC26DB6B2C00550142 /* VMStarView.swift in Sources */,
 				503BB5C226D5322000B71909 /* VMStarConfiguration.swift in Sources */,
 				50461A9B26D14E6E00853FBF /* VMStarLayer.swift in Sources */,
 				50461A9D26D1697700853FBF /* InFa.swift in Sources */,
+				50BE09CF26DB22BE00550142 /* VMStarRatingHelper.swift in Sources */,
+				50BE09D226DB2D0500550142 /* VMStarSizeHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

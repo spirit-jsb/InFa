@@ -5,16 +5,13 @@
 //  Created by Max on 2021/8/22.
 //
 
-#if canImport(UIKit) && canImport(Foundation)
+#if canImport(UIKit)
 
-import Foundation
 import UIKit
 
-public protocol VMStarConfiguration {
+public protocol VMStarConfigurationProtocol {
   
   var totalStars: Int { set get }
-  
-  var starPoints: [CGPoint] { set get }
   
   var starSize: CGFloat { set get }
   
@@ -36,12 +33,16 @@ public protocol VMStarConfiguration {
   
   var filledStarImage: UIImage? { set get }
   
+  var emptyStarImageTintColor: UIColor? { set get }
+  
+  var filledStarImageTintColor: UIColor? { set get }
+  
   var minTouchRating: Float { set get }
   
   var blockingTouches: Bool { set get }
   
   var updateByTouch: Bool { set get }
-    
+  
   var disabledPanGestures: Bool { set get }
 }
 
