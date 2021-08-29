@@ -14,6 +14,9 @@
 		50461A8C26D137EF00853FBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50461A8B26D137EF00853FBF /* Assets.xcassets */; };
 		50461A8F26D137EF00853FBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50461A8D26D137EF00853FBF /* LaunchScreen.storyboard */; };
 		50461A9826D1499800853FBF /* InFa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50461A9726D1499800853FBF /* InFa.framework */; };
+		50BE09DE26DBA9C800550142 /* RatingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BE09DD26DBA9C800550142 /* RatingListTableViewCell.swift */; };
+		50BE09E026DBAA6500550142 /* RatingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BE09DF26DBAA6500550142 /* RatingListViewController.swift */; };
+		50BE09E226DBAFCC00550142 /* RatingImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BE09E126DBAFCC00550142 /* RatingImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		50461A8E26D137EF00853FBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50461A9026D137EF00853FBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50461A9726D1499800853FBF /* InFa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = InFa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50BE09DD26DBA9C800550142 /* RatingListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingListTableViewCell.swift; sourceTree = "<group>"; };
+		50BE09DF26DBAA6500550142 /* RatingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingListViewController.swift; sourceTree = "<group>"; };
+		50BE09E126DBAFCC00550142 /* RatingImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				50461A8226D137EE00853FBF /* AppDelegate.swift */,
 				50461A8426D137EE00853FBF /* SceneDelegate.swift */,
 				50461A8626D137EE00853FBF /* ViewController.swift */,
+				50BE09E126DBAFCC00550142 /* RatingImageViewController.swift */,
+				50BE09DD26DBA9C800550142 /* RatingListTableViewCell.swift */,
+				50BE09DF26DBAA6500550142 /* RatingListViewController.swift */,
 				50461A8826D137EE00853FBF /* Main.storyboard */,
 				50461A8B26D137EF00853FBF /* Assets.xcassets */,
 				50461A8D26D137EF00853FBF /* LaunchScreen.storyboard */,
@@ -149,6 +158,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50BE09DE26DBA9C800550142 /* RatingListTableViewCell.swift in Sources */,
+				50BE09E226DBAFCC00550142 /* RatingImageViewController.swift in Sources */,
+				50BE09E026DBAA6500550142 /* RatingListViewController.swift in Sources */,
 				50461A8726D137EE00853FBF /* ViewController.swift in Sources */,
 				50461A8326D137EE00853FBF /* AppDelegate.swift in Sources */,
 				50461A8526D137EE00853FBF /* SceneDelegate.swift in Sources */,
