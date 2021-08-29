@@ -67,9 +67,8 @@ struct VMStarLayer {
     return shapeLayer
   }
   
-  private static func createStarPath(size: CGFloat, lineWidth: CGFloat) -> UIBezierPath {
-    // https://www.hackingwithswift.com/quick-start/swiftui/how-to-draw-polygons-and-stars
-    
+  // https://www.hackingwithswift.com/quick-start/swiftui/how-to-draw-polygons-and-stars
+  private static func createStarPath(size: CGFloat, lineWidth: CGFloat) -> UIBezierPath {    
     let corners: Int = 5
     let smoothness: CGFloat = 0.382
     
@@ -131,12 +130,14 @@ struct VMStarLayer {
       currentAngle += angleAdjustment
     }
     
+    // close path
+    starPath.close()
+    
     // figure out how much unused space we have at the bottom of our drawing rectangle
     let unusedSpace = (actualSize / 2.0 - bottomEdge) / 2.0
     
     // create and apply a transform that moves our path down by that amount, centering the shape vertically
     let transform = CGAffineTransform(translationX: center.x, y: center.y + unusedSpace)
-    
     starPath.apply(transform)
     
     return starPath
