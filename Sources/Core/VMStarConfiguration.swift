@@ -9,7 +9,7 @@
 
 import UIKit
 
-public struct VMStarConfiguration: VMStarConfigurationProtocol {
+public struct VMStarConfiguration {
   
   public var totalStars: Int = 5
   
