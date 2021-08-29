@@ -14,7 +14,7 @@ struct VMStarLayer {
   static func create(size: CGFloat, fillColor: UIColor?, strokeColor: UIColor?, lineWidth: CGFloat) -> CALayer {
     let containerLayer = self.createContainerLayer(size)
     
-    let starPath = self.createStarPath(size: size, lineWidth: lineWidth)
+    let starPath = self.createStarPath(size: size)
     let starLayer = self.createShapeLayer(starPath: starPath.cgPath, size: size, fillColor: fillColor, strokeColor: strokeColor, lineWidth: lineWidth)
     
     containerLayer.addSublayer(starLayer)
@@ -68,15 +68,12 @@ struct VMStarLayer {
   }
   
   // https://www.hackingwithswift.com/quick-start/swiftui/how-to-draw-polygons-and-stars
-  private static func createStarPath(size: CGFloat, lineWidth: CGFloat) -> UIBezierPath {    
+  private static func createStarPath(size: CGFloat) -> UIBezierPath {
     let corners: Int = 5
     let smoothness: CGFloat = 0.382
     
-    let actualLineWidth = lineWidth + ceil(lineWidth * 0.3)
-    let actualSize = size - actualLineWidth * 2.0
-    
     // draw from the center of our rectangle
-    let center = CGPoint(x: actualSize / 2.0, y: actualSize / 2.0)
+    let center = CGPoint(x: size / 2.0, y: size / 2.0)
     
     // start from directly upwards (as opposed to down or to the right)
     var currentAngle = -CGFloat.pi / 2.0
@@ -134,7 +131,7 @@ struct VMStarLayer {
     starPath.close()
     
     // figure out how much unused space we have at the bottom of our drawing rectangle
-    let unusedSpace = (actualSize / 2.0 - bottomEdge) / 2.0
+    let unusedSpace = (size / 2.0 - bottomEdge) / 2.0
     
     // create and apply a transform that moves our path down by that amount, centering the shape vertically
     let transform = CGAffineTransform(translationX: center.x, y: center.y + unusedSpace)
