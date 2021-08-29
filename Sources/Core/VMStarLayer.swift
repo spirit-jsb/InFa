@@ -29,13 +29,16 @@ struct VMStarLayer {
     starImageLayer.contents = starImage?.cgImage
     starImageLayer.contentsGravity = .resizeAspect
     
-    let starContainerLayer = self.createContainerLayer(size)
-    starContainerLayer.mask = starImageLayer
     if let tintColor = tintColor {
+      let starContainerLayer = self.createContainerLayer(size)
+      starContainerLayer.mask = starImageLayer
       starContainerLayer.backgroundColor = tintColor.cgColor
+      
+      containerLayer.addSublayer(starContainerLayer)
     }
-    
-    containerLayer.addSublayer(starContainerLayer)
+    else {
+      containerLayer.addSublayer(starImageLayer)
+    }
     
     return containerLayer
   }
