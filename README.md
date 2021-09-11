@@ -1,10 +1,10 @@
 # InFa (烟花)
 
 <p align="center">
-  <a href="https://cocoapods.org/pods/InFa"><img src="https://img.shields.io/cocoapods/v/InFa.svg?style=for-the-badge"/></a>
-  <a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/SPM-compatible-orange?style=for-the-badge"></a> 
-  <a href="https://cocoapods.org/pods/InFa"><img src="https://img.shields.io/cocoapods/l/InFa.svg?style=for-the-badge"/></a>
-  <a href="https://cocoapods.org/pods/InFa"><img src="https://img.shields.io/cocoapods/p/InFa.svg?style=for-the-badge"/></a>
+  <a href="https://cocoapods.org/pods/InFa"><img src="https://img.shields.io/cocoapods/v/InFa.svg?style=flat"/></a>
+  <a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/SPM-compatible-orange?style=flat"></a> 
+  <a href="https://cocoapods.org/pods/InFa"><img src="https://img.shields.io/cocoapods/l/InFa.svg?style=flat"/></a>
+  <a href="https://cocoapods.org/pods/InFa"><img src="https://img.shields.io/cocoapods/p/InFa.svg?style=flat"/></a>
 </p>
 
 `InFa` 是一个由 Swift 编写的适用于 iOS 的评分控件，可以用于星级展示或接受用户输入评分。
